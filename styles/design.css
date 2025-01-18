@@ -55,4 +55,29 @@ button>img{
     max-width: 1290px;
     margin: 0 auto;
     display: flex;
+    gap: 162px;
+    margin-top: 50px;
+}
+.header-description{
+    width: 582px;
+}
+.header-description>h1{
+    text-align: left;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.header-description>p{
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 27px;
+}
+.camera-box{
+    width: 440px;
+    /* border: 2px solid black; */
+    background-image: url('/images/circle.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
