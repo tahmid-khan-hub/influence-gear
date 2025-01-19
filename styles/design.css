@@ -15,6 +15,9 @@
 }
 
 /* header styles */
+header{
+    max-width:100%;
+}
 .header{
     max-width: 1370px;
     margin: 0 auto;
@@ -193,19 +196,17 @@
     }
     .picture-collage{
         grid-template-columns: repeat(1,1fr);
+        width: 80%;
+    }
+    .collage-1{
+        justify-content: end;
     }
     .gadget-section{
         flex-direction: column;
-        width: 100%;
         text-align: center;
     }
-
-    .gadget-pic >img{
-        width: 100%;
-    }
-    .gadget-pic{
-        /* width: auto; */
-        justify-items: center;
+    .image{
+        width:min-content;
     }
     
     .picture-collage-head>h2{
@@ -221,7 +222,6 @@
     .camera-section{
         grid-template-columns: repeat(1,1fr);
         margin-bottom: 600px;
-        border: 2px solid black;
     }
     .content{
         text-align: center;
@@ -233,10 +233,21 @@
         /* border: 2px solid black; */
         width: 100%;
     }
-    .heading{
-        
+    
+}    
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .gadget-section{
+        flex-direction: column;
+    }
+    .gadget-description{
+        width: auto;
+        text-align: center;
+    }
+    .picture-collage{
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
     }
     
-    
-
-}    
+}
